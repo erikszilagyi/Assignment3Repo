@@ -1,5 +1,6 @@
-const app = require('express')();
-const port = process.env.PORT || 8080;
+const express = require('express');
+const app = express();
+const port = process.env.port || 8080;
 
 
 const fs = require('fs');
@@ -326,7 +327,7 @@ function dominantColorFinder(color,paintingColorArray)
 app.listen(
     port,
     () => 
-        console.log('Server running at port=', PORT)
+        console.log('Server running at port=', port)
     )
 
 
