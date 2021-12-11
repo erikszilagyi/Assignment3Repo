@@ -28,11 +28,6 @@ console.log(artistJson); */
 
 
 
-app.listen(
-    PORT,
-    () => 
-        console.log('Server running at port=', PORT)
-    )
 
    
 
@@ -328,6 +323,11 @@ function dominantColorFinder(color,paintingColorArray)
 
 
 
+app.listen(
+    port,
+    () => 
+        console.log('Server running at port=', PORT)
+    )
 
 
 
